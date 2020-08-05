@@ -1,3 +1,4 @@
+import time
 num_string = "73167176531330624919225119674426574742355349194934" \
              "96983520312774506326239578318016984801869478851843" \
              "85861560789112949495459501737958331952853208805511" \
@@ -23,6 +24,8 @@ list_str = [char for char in num_string]
 
 i = 0
 product_list = []
+
+t0 = time.time()
 try:
     while i < len(list_str):
         temp = 1
@@ -38,6 +41,8 @@ try:
 except:
     pass
 
+t1 = time.time()
+print(t1-t0)
 print(max(product_list))
 
 # print(num_string)
