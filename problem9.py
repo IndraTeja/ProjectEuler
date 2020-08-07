@@ -14,4 +14,4 @@ for i, a in enumerate(a_square_list, 999):
 
 t1 = time.time()
 
-print(t1-t0)
+print(t1 - t0)
